@@ -2,4 +2,34 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    list-style-type: none;
+}
+
+header {
+    height: 100vh;
+    overflow: hidden;
+}
+
+nav {
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+    font-size: 18px;
+}
+
+nav .logo a{
+    margin: 0.5em 0px 0px 0.5em;
+}
+
+nav .menu-btn {
+    position: absolute;
+    top: 0.5em;
+    right: 0.7em;
+}
+
+nav .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0.5em;
 }
