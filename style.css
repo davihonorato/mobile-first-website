@@ -80,23 +80,41 @@ header .slogan {
     font-weight: 400;
 }
 
-main section.profile {
+main section#profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2em 0.5em;
+    color: #404040;
+    background-color: #FFFEF6;
+}
+
+section#profile h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+section#profile img {
+    width: 180px;
+    border-radius: 10px;
+    margin-bottom: 0.2em;
+}
+
+main section#work {
     min-height: 100vh;
     background-color: #404040;
 }
 
-main section.work {
+main section#contact {
     min-height: 100vh;
-    background-color: #ffffff;
-}
-
-main section.contact {
-    min-height: 100vh;
-    background-color: #404040;
+    background-color: #FFFEF6;
 }
 
 main footer {
     text-align: center;
     font-size: 0.8em;
     padding: 2em 0em;
+    color: #ffffff;
+    background-color: #404040;
 }
