@@ -10,7 +10,6 @@
 }
 
 header {
-    height: 100vh;
     overflow: hidden;
 }
 
@@ -28,7 +27,7 @@ nav {
 }
 
 nav .logo {
-    margin: 0.5em 0 0.5em 0.5em;
+    margin: 0.5em 0 0.5em 0.7em;
     font-weight: 600;
 }
 
@@ -56,6 +55,8 @@ nav .menu {
 
 header .slogan {
     position: relative;
+    overflow: hidden;
+    height: 187px;
 }
 
 .slogan img {
@@ -77,4 +78,25 @@ header .slogan {
 
 .title span {
     font-weight: 400;
+}
+
+main section.profile {
+    min-height: 100vh;
+    background-color: #404040;
+}
+
+main section.work {
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+main section.contact {
+    min-height: 100vh;
+    background-color: #404040;
+}
+
+main footer {
+    text-align: center;
+    font-size: 0.8em;
+    padding: 2em 0em;
 }
