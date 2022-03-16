@@ -102,8 +102,34 @@ section#profile img {
 }
 
 main section#work {
-    min-height: 100vh;
+    padding: 2em 1em;
+    color: #c0c0c0;
     background-color: #404040;
+}
+
+section#work h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+section#work article {
+    text-align: justify;
+    width: 100%;
+    margin-top: 1.5em;
+    border: 1px solid white;
+}
+
+section#work article img {
+    width: 100%;
+}
+
+section#work article h2 {
+    color: #FFFEF6;
+    padding-left: 0.5em;
+}
+
+section#work article p {
+    padding: 0.5em 1em;
 }
 
 main section#contact {
