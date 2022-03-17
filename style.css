@@ -85,7 +85,7 @@ main section#profile {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 2em 0.5em;
+    padding: 2em 1em;
     color: #404040;
     background-color: #FFFEF6;
 }
@@ -98,7 +98,7 @@ section#profile h1 {
 section#profile img {
     width: 180px;
     border-radius: 10px;
-    margin-bottom: 0.2em;
+    margin-bottom: 2em;
 }
 
 main section#work {
@@ -151,13 +151,26 @@ section#contact form {
     width: 100%;
 }
 
-form input {
+form label {
+    font-size: 0.9em;
+}
+
+form input,
+form select {
     width: 100%;
     padding: 0.5em;
     margin-bottom: 1.5em;
-    border: none;
+    border: 1px solid #c0c0c0;
     outline: none;
     background-color: #F7F7F7;
+}
+
+form button {
+    padding: 0.5em 1em;
+    margin-top: 0.5em;
+    border: none;
+    color: #F7F7F7;
+    background-color: #404040;
 }
 
 main footer {
