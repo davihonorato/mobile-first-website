@@ -56,10 +56,10 @@ nav .menu {
 header .slogan {
     position: relative;
     overflow: hidden;
-    height: 187px;
 }
 
 .slogan img {
+    display: block;
     width: 100%;
 }
 
@@ -80,11 +80,12 @@ header .slogan {
     font-weight: 400;
 }
 
+/* profile section */
 main section#profile {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    text-align: justify;
     padding: 2em 1em;
     color: #404040;
     background-color: #FFFEF6;
@@ -101,6 +102,7 @@ section#profile img {
     margin-bottom: 2em;
 }
 
+/* work section */
 main section#work {
     padding: 2em 1em;
     color: #c0c0c0;
@@ -132,6 +134,7 @@ section#work article p {
     padding: 0.5em 1em;
 }
 
+/* contact section */
 main section#contact {
     display: flex;
     flex-direction: column;
@@ -173,6 +176,7 @@ form button {
     background-color: #404040;
 }
 
+/* footer */
 main footer {
     text-align: center;
     font-size: 0.8em;
