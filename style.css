@@ -101,9 +101,6 @@ header .slogan {
 
 /* profile section */
 main section#profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: justify;
     padding: 2em 1em;
     color: #404040;
@@ -111,14 +108,47 @@ main section#profile {
 }
 
 section#profile h1 {
+    text-align: center;
     font-size: 2em;
     margin-bottom: 1em;
 }
 
-section#profile img {
+section#profile article {
+    min-height: 50vh;
+}
+
+article .profile-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.profile-info img {
     width: 180px;
     border-radius: 10px;
-    margin-bottom: 2em;
+    margin: 0 1em 1em 0;
+}
+
+.profile-info .description {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+}
+
+.description span {
+    margin-bottom: 1em;
+}
+
+.description span i {
+    margin-right: 0.7em;
+}
+
+.description button {
+    padding: 1em;
+    border: none;
 }
 
 /* work section */
