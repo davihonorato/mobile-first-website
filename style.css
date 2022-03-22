@@ -115,6 +115,7 @@ section#profile h1 {
 
 section#profile article {
     min-height: 50vh;
+    margin: 1.5em 0;
 }
 
 article .profile-info {
@@ -127,15 +128,15 @@ article .profile-info {
 }
 
 .profile-info img {
-    width: 180px;
+    width: 140px;
     border-radius: 10px;
-    margin: 0 1em 1em 0;
 }
 
 .profile-info .description {
     display: flex;
     flex-direction: column;
-    font-size: 1.2em;
+    font-size: 1em;
+    padding: 1em;
 }
 
 .description span {
@@ -146,7 +147,7 @@ article .profile-info {
     margin-right: 0.7em;
 }
 
-.description button {
+.description input[type=button] {
     padding: 1em;
     border: none;
 }
@@ -164,7 +165,7 @@ section#work h1 {
 }
 
 section#work article {
-    margin-top: 1.5em;
+    margin: 1.5em auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1em;
@@ -201,11 +202,11 @@ main section#contact {
 
 section#contact h1 {
     font-size: 2em;
-    margin-bottom: 1em;
 }
 
 section#contact form {
     width: 100%;
+    margin: 1.5em 0;
 }
 
 form label {
@@ -241,11 +242,25 @@ main footer {
 
 /* media screen */ 
 @media only screen and (min-width: 768px) {
+    .profile-info img {
+        width: 240px;
+    }
     section#work article {
         grid-template-columns: 1fr 1fr;
     }
 
     section#contact form {
         width: 420px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    section#profile {
+        margin: auto;
+        max-width: 1000px;
+    }
+    section#work article{
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 1000px;
     }
 }
