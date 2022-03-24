@@ -14,7 +14,6 @@ html {
 }
 
 /* header nav */
-
 header {
     overflow: hidden;
 }
@@ -79,7 +78,6 @@ li a:hover {
 }
 
 /* header slogan */
-
 header .slogan {
     position: relative;
     overflow: hidden;
@@ -264,7 +262,6 @@ main footer {
     section#work article {
         grid-template-columns: 1fr 1fr;
     }
-
     section#contact form {
         width: 420px;
     }
