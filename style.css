@@ -9,6 +9,10 @@
     list-style-type: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* header nav */
 
 header {
@@ -68,6 +72,10 @@ nav .menu.active {
     width: 100%;
     font-size: 0.9em;
     border-top: 1px solid #cacaca;
+}
+
+li a:hover {
+    color: #CE7E65;
 }
 
 /* header slogan */
@@ -148,8 +156,12 @@ article .profile-info {
 }
 
 .description input[type=button] {
+    font-weight: 500;
     padding: 1em;
+    cursor: pointer;
     border: none;
+    color: #F7F7F7;
+    background-color: #CE7E65;
 }
 
 /* work section */
@@ -194,8 +206,10 @@ article .content-box p {
 main section#contact {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 2em 1em;
+    padding: 0em 1em;
+    min-height: 80vh;
     color: #404040;
     background-color: #FFFEF6;
 }
@@ -224,11 +238,13 @@ form select {
 }
 
 form button {
+    font-weight: 500;
     padding: 0.5em 1em;
     margin-top: 0.5em;
+    cursor: pointer;
     border: none;
     color: #F7F7F7;
-    background-color: #404040;
+    background-color: #CE7E65;
 }
 
 /* footer */
@@ -255,6 +271,24 @@ main footer {
 }
 
 @media only screen and (min-width: 1024px) {
+    nav section #menu-btn {
+        display: none;
+    }
+    nav .menu {
+        position: absolute;
+        top: 0.7em;
+        right: 1em;
+        flex-direction: row;
+        height: auto;
+        width: auto;
+        visibility: visible;
+        transform: scale(1);
+    }
+    .menu li {
+        border: none;
+        width: auto;
+        margin-left: 1em;
+    }
     section#profile {
         margin: auto;
         max-width: 1000px;
@@ -262,5 +296,9 @@ main footer {
     section#work article{
         grid-template-columns: 1fr 1fr 1fr;
         max-width: 1000px;
+    }
+    main section#contact {
+        min-height: 100vh;
+        padding: 0;
     }
 }
